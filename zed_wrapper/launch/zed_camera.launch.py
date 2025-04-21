@@ -99,9 +99,14 @@ def launch_setup(context, *args, **kwargs):
     camera_id = LaunchConfiguration('camera_id')
 
     publish_urdf = LaunchConfiguration('publish_urdf')
-    publish_tf = LaunchConfiguration('publish_tf')
-    publish_map_tf = LaunchConfiguration('publish_map_tf')
-    publish_imu_tf = LaunchConfiguration('publish_imu_tf')
+    # publish_tf = LaunchConfiguration('publish_tf')
+    # publish_map_tf = LaunchConfiguration('publish_map_tf')
+    # publish_imu_tf = LaunchConfiguration('publish_imu_tf')
+
+    publish_tf = False
+    publish_map_tf = False
+    publish_imu_tf = False
+    
     xacro_path = LaunchConfiguration('xacro_path')
 
     custom_baseline = LaunchConfiguration('custom_baseline')
